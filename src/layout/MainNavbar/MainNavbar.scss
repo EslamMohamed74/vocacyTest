@@ -1,0 +1,66 @@
+@import "../../assets/scss/config";
+
+.navbar {
+  background-color: $white-color;
+
+  & .dropdown,
+  & .nav-link:not(.dropdown-toggle) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  & .nav-link,
+  & .show .nav-link {
+    color: $black-color;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+    &.rquestADemo {
+      color: #00d3f4 !important;
+      font-weight: bold;
+    }
+    &.searchIcon {
+      border: 0;
+      border-radius: 50%;
+      transition: 0.9s;
+      &:hover {
+        background-color: #00d3f4;
+        color: $white-color !important;
+      }
+    }
+  }
+  & .dropdown-menu.show {
+    border-color: transparent;
+    border-radius: 35px;
+    padding-top: 0;
+    box-shadow: 4px 8px 20px #0000001a;
+    min-width: 200px;
+    top: 75%;
+    padding: 20px;
+    & .dropdown-item {
+      text-decoration: underline;
+      font-weight: bold;
+      &:hover,
+      &:focus {
+        color: $secondary-color;
+        background-color: transparent;
+      }
+    }
+  }
+
+  & .coursesNavDropdown {
+    & .dropdown-menu.show {
+      width: 1175px;
+      left: -787%;
+    }
+  }
+
+  & .solutionsNavDropdown {
+    & .dropdown-menu.show {
+      width: 500px;
+      left: -150%;
+    }
+  }
+}

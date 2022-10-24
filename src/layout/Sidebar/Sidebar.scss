@@ -1,0 +1,65 @@
+@import "../../assets/scss/config";
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  z-index: 1025;
+  background-color: $white-color;
+  width: 100%;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  overflow-y: auto;
+  padding-top: 13px;
+  &.hidden {
+    margin-left: -100%;
+  }
+  & .searchIcon {
+    border: 0;
+    border-radius: 50%;
+    transition: 0.9s;
+    &:hover {
+      background-color: #00d3f4;
+      color: $white-color !important;
+    }
+  }
+
+  & .nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    & .nav-link,
+    & .show .nav-link {
+      color: $black-color;
+      font-family: "Recoleta";
+      font-size: 22px;
+      padding: 12px 4px;
+      &:hover,
+      &:focus {
+        color: $secondary-color;
+      }
+    }
+    & [aria-expanded="true"]::after {
+      transform: rotate(180deg);
+    }
+    & .dropdown-menu.show {
+      position: relative !important;
+      transform: none !important;
+      border: 0;
+      padding-top: 0;
+      & .dropdown-item {
+        color: $black-color;
+        font-family: "Recoleta";
+        font-size: 22px;
+        &:hover,
+        &:focus {
+          color: $secondary-color;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

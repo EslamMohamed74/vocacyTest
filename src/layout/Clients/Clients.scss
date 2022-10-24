@@ -1,0 +1,36 @@
+@import "../../assets/scss/config";
+.Clients {
+  & h1 {
+    font-family: "Recoleta";
+    font-weight: 600;
+  }
+  & .swiper {
+    padding: 3em 0;
+    & img {
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      -webkit-transition: all 0.5s ease-in-out;
+    }
+    & img:hover {
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .Clients {
+    & .swiper {
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .Clients {
+    & .swiper {
+      padding: 0;
+    }
+  }
+}

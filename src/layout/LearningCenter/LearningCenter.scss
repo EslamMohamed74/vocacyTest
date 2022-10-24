@@ -1,0 +1,20 @@
+@import "../../assets/scss/config";
+.LearningCenter {
+  & h1 {
+    font-family: "Recoleta";
+    font-weight: 600;
+    margin-bottom: 3em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .LearningCenter {
+    & h1 {
+      margin-bottom: 1em;
+    }
+    & .primaryButton,
+    & .primaryButtonDiv {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,167 @@
+@import "../../assets/scss/config";
+.intro {
+  margin-top: 5vh;
+  & .mainSection {
+    &::before {
+      content: url("../../assets/images/Intro/Emblem.svg");
+      position: absolute;
+      top: 0;
+      left: -26vw;
+      z-index: -1;
+    }
+    &::after {
+      content: url("../../assets/images/Intro/Emblem.svg");
+      position: absolute;
+      top: 4vh;
+      right: -25vw;
+      z-index: -1;
+    }
+    position: relative;
+    & img {
+      display: block;
+      margin-left: auto;
+    }
+    & .textSection {
+      position: absolute;
+      top: 3.1vw;
+      & h1 {
+        font-family: "Recoleta";
+        font-size: 80px;
+        color: $primary-color;
+        font-weight: bold;
+      }
+
+      & p {
+        color: $gray-color;
+        width: 29vw;
+      }
+    }
+  }
+  & .blueBackGround {
+    background: transparent
+      radial-gradient(
+        closest-side at 2% 90%,
+        $secondary-color 0%,
+        $primary-color 100%
+      )
+      0% 0% no-repeat padding-box;
+    height: 300px;
+    border-radius: 50px;
+    z-index: -1;
+    margin-top: -21.4%;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 767.98px) {
+  .intro {
+    margin-top: 0;
+    & .mainSection {
+      &::before,
+      &::after {
+        content: "";
+      }
+      & img {
+        width: 80%;
+      }
+      & .textSection {
+        position: relative;
+        margin-top: -75px;
+        & h1 {
+          font-size: 49px;
+        }
+
+        & p {
+          width: 100%;
+        }
+      }
+    }
+    & .secondSection {
+      margin-top: 55px;
+    }
+
+    & .blueBackGround {
+      height: 1680px;
+      margin-top: -1695px;
+      border-radius: 45px;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .intro {
+    margin-top: 30px;
+    & .mainSection {
+      &::before,
+      &::after {
+        content: "";
+      }
+      & img {
+        width: 40%;
+      }
+      & .textSection {
+        position: relative;
+        margin-top: -292px;
+        & h1 {
+          font-size: 49px;
+        }
+
+        & p {
+          width: 60%;
+        }
+      }
+    }
+    & .secondSection {
+      margin-top: 55px;
+    }
+
+    & .blueBackGround {
+      height: 730px;
+      margin-top: -710px;
+      border-radius: 45px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .intro {
+    & .mainSection {
+      & img {
+        width: 55%;
+      }
+      & .textSection {
+        & h1 {
+          font-size: 60px;
+        }
+        & p {
+          width: 47%;
+        }
+      }
+    }
+    & .blueBackGround {
+      margin-top: -30%;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .intro {
+    & img {
+        width: 55% !important;
+      }
+      & .textSection {
+        & h1 {
+          font-size: 70px !important;
+        }
+        & p {
+          width: 47% !important;
+        }
+      }
+    & .blueBackGround {
+      margin-top: -25%;
+    }
+  }
+}

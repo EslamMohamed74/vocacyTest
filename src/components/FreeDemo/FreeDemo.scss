@@ -1,0 +1,15 @@
+@import "../../assets/scss/config";
+.FreeDemo {
+  & h1 {
+    font-family: "Recoleta";
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  & .card {
+    box-shadow: none;
+    &:hover {
+      transform: translateY(0);
+    }
+  }
+}

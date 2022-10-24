@@ -1,0 +1,40 @@
+@import "../../assets/scss/config";
+
+.Assessments {
+  & .row {
+    & .leftSection {
+      overflow: hidden;
+      border-radius: 35px;
+      &:hover {
+        & img {
+          -webkit-transform: scale(1.1);
+        }
+      }
+    }
+    & .leftSection img {
+      border-radius: 35px;
+      -webkit-transition: all 0.5s ease-in-out;
+    }
+  }
+
+  & .rightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $gray-color;
+
+    & h1 {
+      font-family: "Recoleta";
+      color: $black-color2;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .Assessments {
+    & .rightSection {
+      margin-top: 16px;
+    }
+  }
+}

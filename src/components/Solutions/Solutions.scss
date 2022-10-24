@@ -1,0 +1,29 @@
+@import "../../assets/scss/config";
+.Solutions {
+  & .card {
+    box-shadow: none;
+    &:hover {
+      transform: translateY(0);
+    }
+    & a {
+      display: flex;
+      align-items: center;
+      & h3 {
+        font-family: "Recoleta";
+        font-weight: 600;
+        font-size: 20px;
+      }
+      & .cardImg {
+        flex: 1;
+        border-radius: 25px;
+        & .card-img-top {
+          filter: none;
+          -webkit-filter: grayscale(0);
+        }
+      }
+      & .card-body {
+        flex: 2;
+      }
+    }
+  }
+}

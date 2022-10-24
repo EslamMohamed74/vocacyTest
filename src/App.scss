@@ -1,0 +1,17 @@
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+body{
+    font-family: 'Open Sans';
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: local("Recoleta"),
+    url("./fonts/Recoleta-RegularDEMO.otf") format("opentype");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: local("Raleway-Bold"),
+    url("./fonts/Raleway-Bold.ttf") format("truetype");
+}

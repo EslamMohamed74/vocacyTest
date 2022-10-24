@@ -1,0 +1,15 @@
+.home {
+  overflow: hidden;
+
+  & hr.speaceBtwSections {
+    margin: 10vh 0;
+    color: #d7d7d7;
+  }
+}
+@media (max-width: 991.98px) {
+  .home {
+    & hr.speaceBtwSections {
+      margin: 7.2vh 0;
+    }
+  }
+}

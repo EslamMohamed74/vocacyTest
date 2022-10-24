@@ -1,0 +1,77 @@
+@import "../../../assets//scss/config";
+
+.card {
+  box-shadow: 4px 8px 20px #0000001a;
+  border-color: transparent !important;
+  border-radius: 35px !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  min-height: 100% !important;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    & .cardImg {
+      overflow: hidden;
+      border-radius: 35px 35px 0 0;
+      & .card-img-top {
+        filter: gray;
+        -webkit-filter: grayscale(1);
+        -webkit-transition: all 0.5s ease-in-out;
+        width: 100%;
+      }
+    }
+    & h3 {
+      font-family: "Recoleta";
+      font-size: 28px;
+      color: $black-color2;
+      font-weight: 600;
+    }
+
+    & p {
+      color: $gray-color;
+    }
+  }
+
+  & .labels {
+    display: flex;
+    & span {
+      display: inline-block;
+      padding: 5px 10px;
+      text-align: center;
+      border-radius: 20px;
+      margin-bottom: 0.5em;
+      & small {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  & .date {
+    padding-top: 1em;
+    border-top: 1px solid #b5b5b5;
+    & p {
+      color: #b5b5b5;
+    }
+  }
+  &:hover {
+    & .cardImg {
+      & .card-img-top {
+        filter: none;
+        -webkit-filter: grayscale(0);
+        -webkit-transform: scale(1.1);
+      }
+    }
+    transform: translateY(-0.75rem);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .card {
+    & a {
+      & h3 {
+        font-size: 26px;
+      }
+    }
+  }
+}

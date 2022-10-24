@@ -1,0 +1,33 @@
+@import "../../assets/scss/config";
+.JoinOurNewsletter {
+  margin-bottom: 10vh;
+  & h1 {
+    font-family: "Recoleta";
+    font-size: 56px;
+    font-weight: 600;
+    color: $black-color2;
+  }
+  & p {
+    color: $gray-color;
+  }
+  & input {
+    border-color: #d7d7d7;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .JoinOurNewsletter {
+    & .primaryButton {
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .JoinOurNewsletter {
+    & h1 {
+      font-size: 38px;
+    }
+  }
+}

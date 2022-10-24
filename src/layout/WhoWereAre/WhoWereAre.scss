@@ -1,0 +1,54 @@
+@import "../../assets/scss/config";
+
+.WhoWereAre {
+  & .row {
+    & .leftSection {
+      overflow: hidden;
+      border-radius: 35px 0 0 35px;
+    }
+    & .leftSection img {
+      -webkit-transition: all 0.5s ease-in-out;
+      height: 100%;
+    }
+    &:hover {
+      & .leftSection img {
+        -webkit-transform: scale(1.1);
+      }
+    }
+  }
+
+  & .rightSection {
+    background-image: linear-gradient(
+        to right,
+        rgba(27, 196, 222, 0.73),
+        rgba(27, 196, 222, 0.73)
+      ),
+      url("../../assets/images/WhoWereAre/Shapes.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white-color;
+
+    & h1 {
+      font-family: "Recoleta";
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .WhoWereAre {
+    & .row {
+      & .leftSection {
+        overflow: hidden;
+        border-radius: 35px 35px 0 0;
+      }
+    }
+    & .rightSection {
+      padding-top: 2.4vh;
+      padding-bottom: 2.4vh;
+    }
+  }
+}

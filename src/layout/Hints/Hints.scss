@@ -1,0 +1,17 @@
+@import "../../assets/scss/config";
+.Hints {
+  & h1 {
+    font-family: "Recoleta";
+    font-size: 56px;
+    font-weight: 600;
+    color: $black-color2;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .Hints {
+    & h1 {
+      font-size: 38px;
+    }
+  }
+}

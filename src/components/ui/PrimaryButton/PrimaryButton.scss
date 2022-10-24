@@ -1,0 +1,18 @@
+@import "../../../assets/scss/config";
+
+.primaryButton {
+  border: 2px solid $primary-color !important;
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 16px;
+  background-color: $white-color !important;
+
+  &:hover {
+    color: $white-color !important;
+    background-color: $primary-color !important;
+  }
+
+  &.video{
+    padding: 10px 15px 13px;
+  }
+}

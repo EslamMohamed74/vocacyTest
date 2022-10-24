@@ -1,0 +1,9 @@
+<svg id="Component_1" data-name="Component 1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <rect id="Rectangle_4055" data-name="Rectangle 4055" width="60" height="60" fill="none"/>
+  <circle id="Ellipse_27" data-name="Ellipse 27" cx="2" cy="2" r="2" transform="translate(28 28)" fill="#1bc4de" opacity="0.004"/>
+  <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(19 18.79)" fill="none" stroke="#141414" stroke-width="2">
+    <ellipse cx="9.89" cy="9.89" rx="9.89" ry="9.89" stroke="none"/>
+    <ellipse cx="9.89" cy="9.89" rx="8.89" ry="8.89" fill="none"/>
+  </g>
+  <path id="Path_7162" data-name="Path 7162" d="M27.777,22.992l5.393,5.477" transform="translate(7.861 12.741)" fill="none" stroke="#141414" stroke-linecap="round" stroke-width="2"/>
+</svg>

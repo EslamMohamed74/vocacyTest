@@ -1,0 +1,42 @@
+@import "../../assets/scss/config";
+.CoursesCategory {
+  & h1 {
+    font-family: "Recoleta";
+    font-weight: 600;
+  }
+  & p {
+    color: $gray-color;
+  }
+
+  & .swiper {
+    padding: 3em 0 5em;
+    & .swiper-slide {
+      height: 445px;
+    }
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      top: 95%;
+      &::after {
+        color: $black-color2;
+        font-size: 2em;
+      }
+    }
+    & .swiper-button-next:after {
+      content: "🡢";
+    }
+    & .swiper-button-prev:after {
+      content: "🡠";
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .CoursesCategory {
+    & .swiper {
+      padding-top: 0;
+    }
+    & .primaryButton {
+      width: 100%;
+    }
+  }
+}
