@@ -37,8 +37,8 @@ const Home = () => {
           mainText="We Can Help You With An Excellent Coaching & Mentoring"
           buttonText="Learn More"
         />
-        {/* <Clients />
-        <Partners /> */}
+        <Clients />
+        <Partners />
         <LearningCenter />
         <JoinOurNewsletter />
       </div>
